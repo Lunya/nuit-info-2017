@@ -11,6 +11,7 @@ import { FootbarComponent } from './footbar/footbar.component';
 import { EmergencyContactComponent } from './emergency-contact/emergency-contact.component';
 import { GoodPracticesComponent } from './good-practices/good-practices.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RulesComponent } from './rules/rules.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 		FootbarComponent,
 		EmergencyContactComponent,
 		GoodPracticesComponent,
-		NotFoundComponent
+		NotFoundComponent,
+		RulesComponent
 	],
 	imports: [
 		BrowserModule,

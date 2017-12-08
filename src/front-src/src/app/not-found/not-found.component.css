@@ -1,0 +1,28 @@
+#temps {
+	font: italic bold 30px Georgia, serif;
+}
+
+img {
+	position:absolute;
+}
+
+body {
+	width: 100%;
+}
+
+#ical {
+	width: 25%;
+	height: 35%;
+	top: 20%;
+	left: 35%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:5;
+	animation: bounce 0.35s ease infinite alternate;
+}
+
+@keyframes bounce{
+	from {transform: translateY(0);}
+	to        {transform: translateY(-20px);}
+}
