@@ -16,6 +16,7 @@ import { GetCommentsComponent } from './comments/get-comments/get-comments.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RulesComponent } from './rules/rules.component';
 
 
 @NgModule({
@@ -26,6 +27,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 		FootbarComponent,
 		EmergencyContactComponent,
 		GoodPracticesComponent,
+		NotFoundComponent,
+		RulesComponent
 		TchatComponent,
 		NewCommentComponent,
 		GetCommentsComponent,

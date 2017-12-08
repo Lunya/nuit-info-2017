@@ -6,6 +6,7 @@ import { NewCommentComponent } from './comments/new-comment/new-comment.componen
 import { GetCommentsComponent } from './comments/get-comments/get-comments.component';
 import { GoodPracticesComponent } from './good-practices/good-practices.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RulesComponent } from './rules/rules.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
 	{ path: 'comment', component: NewCommentComponent },
 	{ path: 'comments', component: GetCommentsComponent },
 	{ path: 'practices', component: GoodPracticesComponent },
+	{ path: 'rules', component: RulesComponent },
 	{ path: '404', component: NotFoundComponent },
 	{ path: '**', redirectTo: '404' }
 ];
