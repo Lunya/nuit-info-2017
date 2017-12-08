@@ -28,7 +28,7 @@ import { RulesComponent } from './rules/rules.component';
 		EmergencyContactComponent,
 		GoodPracticesComponent,
 		NotFoundComponent,
-		RulesComponent
+		RulesComponent,
 		TchatComponent,
 		NewCommentComponent,
 		GetCommentsComponent,
