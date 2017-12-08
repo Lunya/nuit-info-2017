@@ -1,0 +1,41 @@
+<form [formGroup]="commentForm" (ngSubmit)="onSubmitComment()" novalidate>
+	<h2>Poster un commentaire</h2>
+
+	<div class="col mb-3">
+		<label for="pseudo">Pseudo</label>
+		<input type="text" id="pseudo" class="form-control" formControlName="pseudo" placeholder="Pseudo" required autofocus
+			[ngClass]="{
+				'is-invalid': (commentForm.controls['pseudo'].invalid && commentForm.controls['pseudo'].touched),
+				'is-valid': commentForm.controls['pseudo'].touched
+			}">
+	</div>
+
+	<div class="col mb-3">
+		<label for="email">Pseudo</label>
+		<input type="email" id="email" class="form-control" formControlName="email" placeholder="Email" required autofocus
+			   [ngClass]="{
+				'is-invalid': (commentForm.controls['email'].invalid && commentForm.controls['email'].touched),
+				'is-valid': commentForm.controls['email'].touched
+			}">
+	</div>
+
+	<div class="col mb-3">
+		<label for="title">Pseudo</label>
+		<input type="text" id="title" class="form-control" formControlName="title" placeholder="Titre" required autofocus
+			   [ngClass]="{
+				'is-invalid': (commentForm.controls['title'].invalid && commentForm.controls['title'].touched),
+				'is-valid': commentForm.controls['title'].touched
+			}">
+	</div>
+
+	<div class="col mb-3">
+		<label for="comment">Pseudo</label>
+		<textarea name="comment" id="comment" cols="30" rows="5" class="form-control" formControlName="comment" placeholder="Commentaire" required autofocus
+				  [ngClass]="{
+				'is-invalid': (commentForm.controls['comment'].invalid && commentForm.controls['comment'].touched),
+				'is-valid': commentForm.controls['comment'].touched
+			}"></textarea>
+	</div>
+
+	<button class="btn btn-primary" type="submit" [disabled]="commentForm.invalid">Poster le commentaire</button>
+</form>
