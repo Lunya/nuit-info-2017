@@ -10,6 +10,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FootbarComponent } from './footbar/footbar.component';
 import { EmergencyContactComponent } from './emergency-contact/emergency-contact.component';
 import { GoodPracticesComponent } from './good-practices/good-practices.component';
+import { TchatComponent } from './tchat/tchat.component';
+import { NewCommentComponent } from './comments/new-comment/new-comment.component';
+import { GetCommentsComponent } from './comments/get-comments/get-comments.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomFormsModule } from 'ng2-validation';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RulesComponent } from './rules/rules.component';
 
@@ -24,11 +29,18 @@ import { RulesComponent } from './rules/rules.component';
 		GoodPracticesComponent,
 		NotFoundComponent,
 		RulesComponent
+		TchatComponent,
+		NewCommentComponent,
+		GetCommentsComponent,
+		NotFoundComponent
 	],
 	imports: [
 		BrowserModule,
 		NgbModule.forRoot(),
-		AppRoutingModule
+		AppRoutingModule,
+		FormsModule,
+		ReactiveFormsModule,
+		CustomFormsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

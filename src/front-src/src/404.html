@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Style-Type" content="text/css">
+	<link href="404.css" rel="stylesheet" type="text/css">
+	
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+	var temps = 0;
+	var compteur;
+	function lancerCompteur(tempsInitial) {
+			temps = tempsInitial
+			actualiserCompteur();
+			compteur = setInterval("actualiserCompteur()",1000);
+			}
+	function actualiserCompteur() {
+			if (temps <= 0) {
+					clearInterval(compteur);
+					}
+			var secondes = 0;
+			secondes = temps % 60;
+			var div = document.getElementById("temps");
+			var texte = document.createTextNode(secondes);
+			
+			if (div.firstChild != null) {
+					div.removeChild(div.firstChild);
+					}
+			div.appendChild(texte);
+			if (temps == 0) {
+					document.location.href="http://manouvellepage.com"; 
+					}
+			temps --;
+			}
+</script>
+	
+	
+</head>
+
+<body onload="lancerCompteur(5);">
+
+	<a href="404.html" title="Pour retourner sur la page précédente"><img src="bus-404.png" id="ical"/></a>
+
+	<div style="text-align:center;"><span id="temps"></span> secondes(s) avant une redirection automatique vers la page d'avant. </div>
+	
+</body>
+
+</html>

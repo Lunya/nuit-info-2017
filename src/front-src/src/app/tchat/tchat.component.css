@@ -1,0 +1,7 @@
+.tchat {
+	position: fixed;
+	width: 250px;
+	height: 350px;
+	bottom: 60px;
+	right: 20px;
+}
