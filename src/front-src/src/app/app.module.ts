@@ -13,7 +13,7 @@ import { GoodPracticesComponent } from './good-practices/good-practices.componen
 import { TchatComponent } from './tchat/tchat.component';
 import { NewCommentComponent } from './comments/new-comment/new-comment.component';
 import { GetCommentsComponent } from './comments/get-comments/get-comments.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -28,7 +28,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 		GoodPracticesComponent,
 		TchatComponent,
 		NewCommentComponent,
-		GetCommentsComponent
+		GetCommentsComponent,
 		NotFoundComponent
 	],
 	imports: [
@@ -36,6 +36,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 		NgbModule.forRoot(),
 		AppRoutingModule,
 		FormsModule,
+		ReactiveFormsModule,
 		CustomFormsModule
 	],
 	providers: [],

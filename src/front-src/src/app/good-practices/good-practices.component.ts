@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoodPracticesComponent implements OnInit {
 
-	private goodPractices: Array<{ title: string, steps: Array<string> };
+	private goodPractices: Array<{ title: string, steps: Array<string> }>;
 
 	constructor() {
 		this.goodPractices = [
