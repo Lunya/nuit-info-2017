@@ -15,6 +15,7 @@ import { NewCommentComponent } from './comments/new-comment/new-comment.componen
 import { GetCommentsComponent } from './comments/get-comments/get-comments.component';
 import { FormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { CustomFormsModule } from 'ng2-validation';
 		TchatComponent,
 		NewCommentComponent,
 		GetCommentsComponent
+		NotFoundComponent
 	],
 	imports: [
 		BrowserModule,
