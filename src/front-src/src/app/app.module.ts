@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FootbarComponent } from './footbar/footbar.component';
 import { EmergencyContactComponent } from './emergency-contact/emergency-contact.component';
 import { GoodPracticesComponent } from './good-practices/good-practices.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { GoodPracticesComponent } from './good-practices/good-practices.componen
 		NavbarComponent,
 		FootbarComponent,
 		EmergencyContactComponent,
-		GoodPracticesComponent
+		GoodPracticesComponent,
+		NotFoundComponent
 	],
 	imports: [
 		BrowserModule,

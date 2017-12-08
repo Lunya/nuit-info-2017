@@ -1,3 +1,24 @@
-<p>
-  good-practices works!
-</p>
+<div class="jumbotron">
+	<h1>Bonnes pratiques</h1>
+
+
+	<div *ngFor="let practice of goodPractices" class="card my-5">
+		<div class="card-header">
+			<div class="container">
+				<div class="row">
+					<h4 class="card-title">{{ practice.title }}</h4>
+				</div>
+			</div>
+
+		</div>
+		<div class="card-body">
+			<ul>
+				<li *ngFor="let str of practice.steps">{{ str }}</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+</div>
