@@ -2,19 +2,19 @@ CREATE DATABASE cookie;
 
 
 CREATE TABLE comment (
-	id 		INT(11) 		NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	pseudo 	VARCHAR(25) 	NOT NULL,
-	mail 	VARCHAR(50),
-	text	VARCHAR(500) 	NOT NULL,
-	c_date  DATE	NOT NULL
+    id         INT(11)     AUTO_INCREMENT PRIMARY KEY,
+    pseudo     VARCHAR(25)     NOT NULL,
+    mail     VARCHAR(50),
+    text    VARCHAR(500)     NOT NULL,
+    c_date  DATE    NOT NULL
 );
 
 CREATE TABLE contact (
-	id 		INT(11) 	NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	mail 	VARCHAR(25) NOT NULL,
-	subject VARCHAR(25) NOT NULL,
-	content	VARCHAR(500) NOT NULL,
-	c_date  DATE	NOT NULL
+    id         INT(11)     NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    mail     VARCHAR(25) NOT NULL,
+    subject VARCHAR(25) NOT NULL,
+    content    VARCHAR(500) NOT NULL,
+    c_date  DATE    NOT NULL
 );
 
 

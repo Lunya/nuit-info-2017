@@ -3,18 +3,8 @@ let path = require('path');
 let http = require('http');
 let bodyParser = require('body-parser');
 let mysql = require('mysql2');
-let fs = require('fs');
 require('dotenv').config();
 
-// create database if not exists
-let bd = mysql.createConnection({
-	host:		process.env.DB_SERVER_HOST,
-	port:		process.env.DB_SERVER_PORT,
-	user:		process.env.DB_SERVER_USER,
-	password:	process.env.DB_SERVER_PASSWORD,
-	charset:	'utf8'
-});
-bd.query(fs.readFileSync('./bdd/create.sql').toString());
 
 // files included
 let api = require('./api');
