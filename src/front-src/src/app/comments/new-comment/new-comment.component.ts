@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CustomValidators } from 'ng2-validation';
 import { HttpClient } from '@angular/common/http';
-import { PlatformLocation } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,7 +15,7 @@ export class NewCommentComponent implements OnInit {
 	constructor(
 		private fb: FormBuilder,
 		private http: HttpClient,
-		private platformLocation: PlatformLocation,
+		private location: Location,
 		private router: Router
 	) {
 		this.commentForm = this.fb.group({
@@ -31,7 +30,8 @@ export class NewCommentComponent implements OnInit {
 	}
 
 	onSubmitComment() {
-		this.http.post(this.platformLocation.location.origin + '/api/comment', this.commentForm.value)
+		console.log(this.location.origin);
+		this.http.post(this.location.origin + '/api/comment', this.commentForm.value)
 			.subscribe(result => {
 				this.router.navigate(['/']).catch(err => console.log(err));
 			}

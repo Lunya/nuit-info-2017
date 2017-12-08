@@ -1,6 +1,6 @@
 let express = require('express');
 let router = express.Router();
-let dc = require('./databaseConnect');
+let dc = require('../databaseConnect');
 
 router.post('/comment', (req, res) => {
 	res.contentType('application/json');

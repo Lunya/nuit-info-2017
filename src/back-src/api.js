@@ -4,7 +4,7 @@ let router = express.Router();
 
 router.use(cors());
 
-router.use(require('routes/user'));
-router.use(require('routes/router'));
+router.use(require('./routes/user'));
+router.use(require('./routes/comments'));
 
 module.exports = router;
